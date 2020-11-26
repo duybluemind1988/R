@@ -17,3 +17,5 @@ gitcreds_get()
 install.packages('credentials')
 library(credentials)
 set_github_pat()
+
+# Add new from github
