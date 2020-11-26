@@ -4,3 +4,8 @@ library(dslabs)
 data(murders)
 p <- ggplot(data = murders)
 class(p)
+
+murders %>% ggplot() + 
+  geom_point(aes(x = population/10^6, y = total))
+
+p + geom_point(aes(population/10^6, total))
